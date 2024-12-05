@@ -1,0 +1,3 @@
+begin assign ( a int ) assign ( b int ) assign ( c int ) assign a to 10 assign b to 20  for assign c to a c <= b c = c+1 print int , c  end
+
+

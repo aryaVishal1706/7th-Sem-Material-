@@ -1,0 +1,3 @@
+begin assign ( e int ) assign ( b int ) assign ( c int ) assign e to 10 assign b to 15 while e+b > 20 then if b > 15 then c = e + b endif endwhile print int , c end
+
+

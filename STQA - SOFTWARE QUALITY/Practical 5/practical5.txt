@@ -1,0 +1,6 @@
+https://the-internet.herokuapp.com/login
+
+
+
+Define terms Activation Tree and Activation Record in static
+allocation of space with example.

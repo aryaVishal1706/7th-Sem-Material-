@@ -1,0 +1,39 @@
+Based on the papers you've referred to, here are the preprocessing methods applied in each:
+
+### 1. **Affective Brain–Computer Interfaces (aBCIs): A Tutorial**
+   - **Preprocessing Techniques:**
+     - **Filtering**: Bandpass filters to remove noise and focus on specific frequency bands (typically delta, theta, alpha, beta, and gamma).
+     - **Artifact Removal**: Methods like Independent Component Analysis (ICA) or spatial filtering are often employed to remove artifacts such as eye blinks or muscle movements.
+     - **Normalization**: The EEG signal might be normalized to reduce variation across subjects or sessions.
+   
+   - The paper discusses general preprocessing techniques but does not specify a unique method for their dataset.
+
+### 2. **Design with Myself: A BCI Tool for Metacognitive Monitoring of Designers**
+   - **Preprocessing Techniques:**
+     - **Signal Denoising**: Filtering to remove electrical noise and other non-brain signals.
+     - **Bandpass Filtering**: Specific frequency bands (e.g., theta, alpha) are selected to focus on emotion-related neural activity.
+     - **Event-Related Potentials (ERPs)**: Averages of EEG signals are taken around specific stimuli to enhance signal-to-noise ratio.
+     - **Artifact Removal**: Techniques such as ICA are used to remove eye movements and other non-neural noise.
+
+### 3. **A Framework for Real-Time Intelligent and Interactive Brain-Computer Interface**
+   - **Preprocessing Techniques:**
+     - **EEG Signal Filtering**: Bandpass filtering to remove frequencies outside the range of interest (often focusing on specific frequency bands like alpha or beta for cognitive states).
+     - **Signal Segmentation**: Dividing continuous EEG data into smaller epochs, typically around events (stimulus or action).
+     - **Normalization**: Scaling of the EEG data to account for variability across sessions and subjects.
+     - **Artifact Removal**: ICA is mentioned as a tool for removing eye and muscle artifacts.
+
+### 4. **Improving EEG Signal-Based Emotion Recognition Using a Hybrid GWO-XGBoost Feature Selection Method**
+   - **Preprocessing Techniques:**
+     - **Bandpass Filtering**: EEG signals are bandpass filtered to isolate frequency bands related to emotion recognition (e.g., theta, alpha).
+     - **EEG Signal Segmentation**: The signals are divided into epochs that are time-locked to specific emotional stimuli.
+     - **Artifact Removal**: Similar to the other papers, methods like ICA or other artifact rejection techniques are employed to remove eye blinks or muscle movements.
+     - **Data Normalization**: The signals might be normalized or standardized to adjust for differences in signal amplitude across subjects.
+
+### Summary of Common Preprocessing Methods:
+1. **Bandpass Filtering**: Applied across all papers to isolate relevant frequency bands.
+2. **Artifact Removal**: Techniques such as ICA or similar methods are commonly applied to remove eye, muscle, and other artifacts.
+3. **Signal Segmentation**: Most papers use epoch segmentation to analyze specific time windows in response to stimuli.
+4. **Normalization**: Some papers apply normalization to standardize the data before analysis.
+5. **Event-Related Potential (ERP) Extraction**: This is used specifically in studies analyzing responses to stimuli.
+
+These preprocessing steps are standard practices in EEG-based emotion recognition and BCI research. They ensure that the data is cleaned, focused, and ready for analysis, improving the accuracy of downstream classification or prediction tasks.

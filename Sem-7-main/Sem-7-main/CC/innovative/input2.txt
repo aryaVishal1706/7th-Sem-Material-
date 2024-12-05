@@ -1,0 +1,3 @@
+begin assign ( a int ) assign ( b int ) assign a to 10 assign b to a myfunction(b int) start_procedure myfunction(b int) return b end_procedure with return type int end
+
+
